@@ -5,18 +5,18 @@ bookToc: false
 ---
 # The Process
 
-Starting from William Deming's process specification from the '50s that states:
+Let's start with a **Process** based on William Deming's definition from the '50s:
 
 *The Process would be divided into stages; the work would enter a certain stage, change state and continue, having as client the next stage. The final step would be for the user, buyer of the product or service, the main link of the production line. At each stage there would be production, that is, something would happen in the assets that enter the stage, causing its exit in a different state.*
 
-This **Process** is then reflected into the first nine rules below. A new tenth rule is added to emphasize sustainability.
+Deming's **Process** is then reflected into nine rules. A new tenth rule is added to emphasize sustainability.
 
 ## PROCESS
 
 **Stage 1** ► **Stage 2** ► ... ► **Consumer**
 
 1. The Process is divided into Stages;
-2. The work enters a Stage, changes state, and proceeds with the next Stage as a client;
+2. The work enters a Stage, changes state, and proceeds to the next Stage as a client;
 3. At each Stage there is production, that is, something happens in the set of assets that enter a Stage, causing their exit in a different state.
 4. Each Stage incorporates continual improvement of methods and procedures to meet subsequent Stages;
 5. Each Stage cooperates with the next and the previous, seeking optimization;
