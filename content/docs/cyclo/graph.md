@@ -53,7 +53,7 @@ More details are shown at the links below:
 
 ## P&Q Factory Cyclo
 
-The [**P&Q Factory**](/docs/posts/pq-factory/) is used as a sample, its manufacturing production flow is shown below:
+The [**P&Q Factory**](/posts/pq-factory/) is used as a sample, its manufacturing production flow is shown below:
 
 {{< mermaid >}}
 graph LR

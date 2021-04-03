@@ -20,7 +20,7 @@ In order to analyze thoroughly the **Stage** of the **Process**, we should consi
 
 Although the following example shows a *manufacturing* process, these flows can also be applied to generic *environments* where **resources** are used for **tasks** that require **skills**, to achieve a **goal**.
 
-In order to extract a process sample, the [**P&Q Factory**](/docs/posts/pq-factory/), shown below, will be used as an example.
+In order to extract a process sample, the [**P&Q Factory**](/posts/pq-factory/), shown below, will be used as an example.
 
 {{< mermaid >}}
 graph LR
