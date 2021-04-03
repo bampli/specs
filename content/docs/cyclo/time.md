@@ -138,7 +138,7 @@ sequenceDiagram
     end
 {{< /mermaid >}}
 
-The actual amount of time each **Stage** will require at run time is ultimately defined by the **Cyclo** and **Facility** implementations. All timing should be analyzed as **statistical distributions**, subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [TPM](/docs/posts/tpm/) (Total Productive Manintenance) directives.
+The actual amount of time each **Stage** will require at run time is ultimately defined by the **Cyclo** and **Facility** implementations. All timing should be analyzed as **statistical distributions**, subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [TPM](/posts/tpm/) (Total Productive Manintenance) directives.
 
 {{< hint info >}}
 **This project is published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
