@@ -14,4 +14,4 @@ The weak point of this approach is that each manager is  solely responsible for 
 
 In the middle of pyramid, the managers compete with each other, trying to pursue their local best. As a result, distortions in information and decision geopardize the company. Higher the hierarchical pyramid, greater the risk of distortions.
 
-See more at [**The Conflict in the Pyramid**](/docs/posts/conflict-in-the-pyramid/).
+See more at [**The Conflict in the Pyramid**](/posts/conflict-in-the-pyramid/).
