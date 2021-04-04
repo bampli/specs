@@ -15,9 +15,6 @@ classDiagram
     Process --> "1..n" Stage : composed_of
     Stage --> "1..n" Resource : allocates
     Stage --> Stage : previous_next
-    Resource <|-- Cyclo : from_cyclo
-    Cyclo <|-- RM : external
-    Cyclo <|-- WIP : internal
     Stage --> "1..n" Skill : requires
 {{< /mermaid >}}
 
