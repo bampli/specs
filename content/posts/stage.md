@@ -103,5 +103,5 @@ The **Stage** model highlights the following features:
 At run time, it is necessary to audit the Process and certify that the Cyclo is able to run. Every Stage Skill demanded by the Process specification should be satisfied in due time by the Facility implementation. Worker and Tool resources must permanently comply with the required Stage expertise, in order the Process may keep running, and generating Gain.
 
 {{< hint info >}}
-**This project is published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
+**Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
 {{< /hint >}}
