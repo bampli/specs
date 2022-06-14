@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Times of Gain
 
-The following "business rules" apply to a **Planet** populated by **Product**, made by **Process** that use Raw Material **RM**.
+The following "business rules" apply to a **Planet** populated by **Product**, made by **Process** using Raw Material **RM**.
 
 - Connected as a **Cyclo**, the **Process** is specified by the timing of its **Stages**.
 - **Stages** consumes **Resources**, both from **Facility** and from **Cyclo**.
