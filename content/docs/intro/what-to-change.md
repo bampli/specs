@@ -10,7 +10,7 @@ The decision-making of all companies has been solely based on **conflict managem
 
 The weak point of this approach is that each manager is  solely responsible for preventing the propagation of errors, whether in the information coming from the process, or decisions emanated by investors at the top.
 
-**THE SUM OF THE LOCAL OPTIMA ALMOST ALWAYS TAKES US AWAY FROM THE GLOBAL GREAT.**
+**THE SUM OF LOCAL OPTIMA ALMOST ALWAYS TAKES US AWAY FROM THE GLOBAL GREAT.**
 
 In the middle of pyramid, the managers compete with each other, trying to pursue their local best. As a result, distortions in information and decision geopardize the company. Higher the hierarchical pyramid, greater the risk of distortions.
 
