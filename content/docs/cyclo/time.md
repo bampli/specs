@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Times of Gain
 
-The following rules add more details to the **Process** specification:
+The following "business rules" apply to a **Planet** populated by **Product**, made by **Process** that use Raw Material **RM**.
 
 - Connected as a **Cyclo**, the **Process** is specified by the timing of its **Stages**.
 - **Stages** consumes **Resources**, both from **Facility** and from **Cyclo**.
@@ -13,7 +13,10 @@ The following rules add more details to the **Process** specification:
 - Every **Stage** requires **Skills** to accomplish its task.
 - The **Skill** is provided by a combination of **Workers** and/or **Tools**.
 - The **Stage** also allocates **Resources** from the **Cyclo** to accomplish its task.
-- The **Cyclo** supports **RM** and **WIP** flows through the **Stages**.
+- The **Cyclo** extracts **RM** from **Planet** as Work In Process **WIP**.
+- The **Cyclo** moves **WIP** through the **Stages**.
+- **Product** and **RM** are both derived from **WIP**, with a logistic.
+- **WIP** becomes **Product** that becomes **RM** in another **Cyclo**.
 
 ## Stage Model
 
@@ -25,24 +28,25 @@ The **Stage** model, shown below, allocates **Facility** resources divided into 
 {{< mermaid >}}
 classDiagram
     Planet --> "1..n" Product : populated_by
+    Planet --> "1..n" RM : populated_by
     Product --> "1..n" Process : made_by
     Process --> "1..n" Stage : composed_of
     Stage --> "1..n" Resource : allocates
     Stage --> Stage : previous_next
+    WIP <|-- RM : extract
+    Cyclo <|-- WIP : move
+    FacilityInfra <|-- Energy
+    FacilityInfra <|-- Area
     Worker --> "1..n" Skill : has_skill
     Worker --> "0..n" Tool : commands
     Tool --> "0..n" Tool : commands
     Tool --> "1..n" Skill : has_skill
     Resource <|-- Cyclo : from_cyclo
-    Cyclo <|-- RM : external
-    Cyclo <|-- WIP : internal
     Resource <|-- Facility : from_facility
     Facility <|-- FacilityInfra : infrastructure
-    FacilityInfra <|-- Energy
-    FacilityInfra <|-- Area
-    Facility <|-- FacilityOp : operation
     FacilityOp <|-- Worker
     FacilityOp <|-- Tool
+    Facility <|-- FacilityOp : operation
     Stage --> "1..n" Skill : requires
 {{< /mermaid >}}
 
@@ -107,7 +111,7 @@ stateDiagram
 
 ### Resource Release
 
-- After execution, allocated **Resources** are freed, and become available for other **Stages**.
+- After execution, allocated **Resources** may become available to another **Stage**.
 - Any resulting **WIP** must be released for the next **Stage** of the **Cyclo**.
 - **Resources** allocated from the Facility should be released to **FacilityInfra** and **FacilityOp**.
 - At **Resource** release phase, there may be a delay due to the **Resource Release Time**.
