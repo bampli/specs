@@ -1,60 +1,54 @@
 ---
-title: Cyclo Model
-weight: 20
+title: Model
+weight: 7
+bookToc: false
 ---
-# Cyclo Model
+# Model
 
-## CycloJourneyCatalog
+The following rules apply to a **Planet** populated by **Products**, made by a **Process** that may extract Raw Material **RM** from the **Planet**.
 
-```python
-class CycloJourneyCatalog(object):
+- The **Process** is specified by **Cyclos** that are grouped in **Stages**.
+- The **Facility** provides infrastructural & operational **Resources**. 
+- **Stages** consumes **Resources**, both from **Facility** and from **Cyclo**.
+- The **Stage** allocates **Resources** from the **Facility** to accomplish its task.
+- Every **Stage** requires **Skills** to accomplish its task.
+- The **Skill** is provided by a combination of **Workers** and/or **Tools**.
+- The **Stage** also allocates **Resources** from the **Cyclo** to accomplish its task.
+- The **Stage** extracts **RM** from **Planet** as Work In Process **WIP**.
+- The **Stage** transforms **WIP** through the **Cyclo** until it becomes **Product**.
+- **Product** and **RM** are both derived from **WIP**, with some logistic between them.
+- **WIP** becomes **Product** that may become **RM** to another **Cyclo**.
 
-    def __init__(self, cyclo_name, journey_id,
-                 start, end, active, summary):
-        self.cyclo_name = cyclo_name
-        self.journey_id = uuid_from_string(journey_id)
-        self.start = format_timestamp(start)
-        self.end = format_timestamp(end)
-        self.active = active
-        self.summary = summary
-```
+The **Stage**, detailed below, allocates **Facility** resources divided into two categories:
 
-## CycloSpin
+- **FacilityInfra**: includes infrastructure items, like Shop Floor Area, Energy, etc.
+- **FacilityOp**: includes operational items with **Skills**, like Tools and Workers.
 
-```python
-class CycloSpin(object):
+{{< mermaid >}}
+classDiagram
+    Planet --> "1..n" Product : populated_by
+    Planet --> "1..n" RM : provides
+    Product --> "1..n" Process : made_by
+    Process --> "1..n" Cyclo : composed_of
+    Cyclo --> "1..n" Stage : composed_of
+    Stage --> "1..n" Facility : allocates
+    Stage --> Stage : previous_next
+    WIP <|-- RM : extract
+    Stage <|-- WIP : transform
+    FacilityInfra <|-- Energy
+    FacilityInfra <|-- Area
+    Worker --> "1..n" Skill : has_skill
+    Worker --> "0..n" Tool : commands
+    Tool --> "0..n" Tool : commands
+    Tool --> "1..n" Skill : has_skill
+    Facility <|-- FacilityInfra : infrastructure
+    FacilityOp <|-- Worker
+    FacilityOp <|-- Tool
+    Facility <|-- FacilityOp : operation
+    Stage --> "1..n" Skill : requires
+{{< /mermaid >}}
 
-    def __init__(self, cyclo_name, journey_id, data):
-        self.cyclo_name
-        self.journey_id = uuid_from_string(journey_id)
-        self.spin = float(data.get('spin'))
-        self.spin_unit = data.get('spin_unit', '#/t')
-        self.reading_time = format_timestamp()
-```
 
-## Stage
-
-```python
-class Stage(object):
-
-    def __init__(self, stage_name, cyclo_name, timestep):
-        self.stage_name
-        self.cyclo_name
-        self.timestep
-        self.spin = float(data.get('spin'))
-        self.spin_unit = data.get('spin_unit', '#/t')
-        self.reading_time = format_timestamp()
-```
-
-## Product
-
-```python
-class Product(object):
-
-    def __init__(self, product_name,
-                 latitude, longitude, coordinates):
-        self.product_name
-        self.latitude
-        self.longitude
-        self.coordinates
-```
+{{< hint info >}}
+**Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
+{{< /hint >}}

@@ -1,6 +1,8 @@
 ---
 title: Cyclo Service
 weight: 30
+bookHidden: true
+bookToc: false
 ---
 # Cyclo Service
 

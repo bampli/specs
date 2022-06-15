@@ -1,6 +1,8 @@
 ---
 title: Data Access
 weight: 40
+bookHidden: true
+bookToc: false
 ---
 # Data Access
 
