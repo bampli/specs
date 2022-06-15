@@ -6,7 +6,7 @@ weight: 45
 
 # Planet
 
-The **Planet** shown below is populated by at least one **Product** made by its respective **Process**. Each **Process** may include at least one **Cyclo**, composed by at least one **Stage**, that requires eventual **Resources** and **Skills** to accomplish its objective.
+The **Planet** shown below is populated by at least one **Product** made by its respective **Process**. The **Planet** also provides raw material **RM** that is extracted as work in process **WIP**. Each **Process** has at least one **Cyclo**, composed by at least one **Stage**. A **Facility** provides **Resources** and **Skills** to support **Stage** transformations in **WIP**. 
 
 {{< mermaid >}}
 classDiagram
