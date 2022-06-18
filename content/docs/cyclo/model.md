@@ -29,15 +29,18 @@ classDiagram
     Planet --> "1..n" Product : populated_by
     Planet --> "1..n" RM : provides
     Product --> "1..n" Process : made_by
+    Product --> WIP : extracts
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
-    Stage --> "1..n" Facility : allocates
+    Stage --> "1..n" WIP : 3.transforms
+    Stage --> "1..n" Facility : 2.allocates
     Stage --> Stage : previous_next
-    WIP <|-- RM : extract
-    Stage <|-- WIP : transform
+    WIP --> RM : extracts
     FacilityInfra <|-- Energy
     FacilityInfra <|-- Area
+    FacilityInfra <|-- Other
     Worker --> "1..n" Skill : has_skill
+    Worker --> "0..n" Worker : commands
     Worker --> "0..n" Tool : commands
     Tool --> "0..n" Tool : commands
     Tool --> "1..n" Skill : has_skill
@@ -45,7 +48,7 @@ classDiagram
     FacilityOp <|-- Worker
     FacilityOp <|-- Tool
     Facility <|-- FacilityOp : operation
-    Stage --> "1..n" Skill : requires
+    Stage --> "1..n" Skill : 1.requires
 {{< /mermaid >}}
 
 

@@ -6,7 +6,7 @@ weight: 45
 
 # Planet
 
-The **Planet** shown below is populated by at least one **Product** made by its respective **Process**. The **Planet** also provides raw material **RM** that is extracted as work in process **WIP**. Each **Process** has at least one **Cyclo**, composed by at least one **Stage**. A **Facility** provides **Resources** and **Skills** to support **Stage** transformations in **WIP**. 
+The **Planet** shown below is populated by at least one **Product** made by its respective **Process**. The **Planet** also provides raw material **RM** that is extracted as work in process **WIP**. Each **Process** has at least one **Cyclo**, composed by at least one **Stage** that requires at least one **Skill** to be accomplished. The **Facility** provides resources to support **Stage** transformations in **WIP**. 
 
 {{< mermaid >}}
 classDiagram
@@ -16,10 +16,11 @@ classDiagram
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
     Stage --> Stage : previous_next
-    WIP <|-- RM : extract
-    Stage --> "1..n" Facility : allocates
-    Stage <|-- WIP : transform
+    WIP --> RM : extracts
+    Stage --> WIP : transforms
+    Product --> WIP : extracts
     Stage --> "1..n" Skill : requires
+    Stage --> "1..n" Facility : allocates
 {{< /mermaid >}}
 
 {{< hint info >}}
