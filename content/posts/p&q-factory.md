@@ -20,7 +20,7 @@ The P&Q Factory gives no room for apology and demonstrates how the "Theory of Co
 
 ## P&Q Factory
 
-Using [TPM](/posts/tpm/) to describe the P&Q Factory, there is little reason to blame poor corporate results:
+Using [TPM](/posts/tpm/) to describe the P&Q Factory, there are very few reasons to blame poor corporate results:
 
 - **ati = 1** Equipment runs nonstop for the working time, available time index is 1.
 - **oti = 1** There is no break in the operation, operating time index is 1.
