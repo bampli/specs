@@ -63,7 +63,7 @@ The middle flow starts with RM2 being processed by B for 15 minutes, continue to
 
 Lastly, RM3 spends 10 minutes being processed by A, then is processed for 15 minutes by B and goes to Q assembly workstation. D assembles P and Q in respectively 15 and 5 minutes.
 
-## What is the net profit of the P&Q Factory?
+## How much profits the P&Q Factory?
 
 What is the maximum net profit that P&Q Factory can earn per week? Think about the time each stage has for producing P&Q. This exercise is solved in the books "The Haystack Syndrome" and [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q).
 
