@@ -20,7 +20,7 @@ The P&Q Factory gives no room for apology and demonstrates how the "Theory of Co
 
 ## P&Q Factory
 
-Using TPM to describe the P&Q Factory, there is little reason to blame poor corporate results:
+Using [TPM](/posts/tpm/) to describe the P&Q Factory, there are very few reasons to blame poor corporate results:
 
 - **ati = 1** Equipment runs nonstop for the working time, available time index is 1.
 - **oti = 1** There is no break in the operation, operating time index is 1.
@@ -39,7 +39,7 @@ has potential to buy up to 100 pieces of P and 50 pieces of Q per week.
 
 ## P&Q Process
 
-The engineering of the P&Q Factory presents the *manufacturing* process in the following diagram, showing the production flows that result in P and Q. These flows could also be applied to other *environments* where **resources** are used for **tasks** that require **skills**, to achieve a **goal**.
+The engineering of the P&Q Factory presents its *manufacturing* process in the following diagram, showing the production flows that result in P and Q. These flows could also be applied to other *environments* where **resources** are used for **tasks** that require **skills**, to achieve a **goal**.
 
 {{< mermaid >}}
 graph LR
@@ -63,7 +63,7 @@ The middle flow starts with RM2 being processed by B for 15 minutes, continue to
 
 Lastly, RM3 spends 10 minutes being processed by A, then is processed for 15 minutes by B and goes to Q assembly workstation. D assembles P and Q in respectively 15 and 5 minutes.
 
-## What is the net profit of the P&Q Factory?
+## How much profits the P&Q Factory?
 
 What is the maximum net profit that P&Q Factory can earn per week? Think about the time each stage has for producing P&Q. This exercise is solved in the books "The Haystack Syndrome" and [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q).
 
