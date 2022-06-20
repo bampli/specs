@@ -16,9 +16,9 @@ classDiagram
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
     Stage --> Stage : previous_next
-    WiP --> RM : extracts
+    WiP --> RM : buys
     Stage --> WiP : transforms
-    Product --> WiP : extracts
+    Product --> WiP : sells
     Stage --> "1..n" Skill : requires
     Stage --> "1..n" Facility : allocates
 {{< /mermaid >}}
