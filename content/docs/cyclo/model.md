@@ -14,10 +14,10 @@ The following rules apply to a **Planet** populated by **Products**, made by a *
 - Every **Stage** requires **Skills** to accomplish its task.
 - The **Skill** is provided by a combination of **Workers** and/or **Tools**.
 - The **Stage** also allocates **Resources** from the **Cyclo** to accomplish its task.
-- The **Stage** extracts **RM** from **Planet** as Work In Process **WIP**.
-- The **Stage** transforms **WIP** through the **Cyclo** until it becomes **Product**.
-- **Product** and **RM** are both derived from **WIP**, with some logistic between them.
-- **WIP** becomes **Product** that may become **RM** to another **Cyclo**.
+- The **Stage** extracts **RM** from **Planet** as Work In Process **WiP**.
+- The **Stage** transforms **WiP** through the **Cyclo** until it becomes **Product**.
+- **Product** and **RM** are both derived from **WiP**, with some logistic between them.
+- **WiP** becomes **Product** that may become **RM** to another **Cyclo**.
 
 The **Stage**, detailed below, allocates **Facility** resources divided into two categories:
 
@@ -29,13 +29,13 @@ classDiagram
     Planet --> "1..n" Product : populated_by
     Planet --> "1..n" RM : provides
     Product --> "1..n" Process : made_by
-    Product --> WIP : extracts
+    Product --> WiP : extracts
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
-    Stage --> "1..n" WIP : 3.transforms
+    Stage --> "1..n" WiP : 3.transforms
     Stage --> "1..n" Facility : 2.allocates
     Stage --> Stage : previous_next
-    WIP --> RM : extracts
+    WiP --> RM : extracts
     FacilityInfra <|-- Energy
     FacilityInfra <|-- Area
     FacilityInfra <|-- Other

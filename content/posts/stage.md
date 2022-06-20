@@ -31,20 +31,20 @@ graph LR
     RM3[RM3 $20/u] --> A3[A 10min/u] --> B3[B 15min/u] --> D2[D 5min/u] --> Q[Q $100/U 50u/wk]
 {{< /mermaid >}}
 
-Initially, the partial elements shown below represent **RM1 being processed by A** for 15 minutes. This means that something happens to the raw material RM1, causing its exit from A in a different state. This new asset is actually a fragment, known by the generic term  **work in process (WIP)**.
+Initially, the partial elements shown below represent **RM1 being processed by A** for 15 minutes. This means that something happens to the raw material RM1, causing its exit from A in a different state. This new asset is actually a fragment, known by the generic term  **work in process (WiP)**.
 
 {{< mermaid >}}
 graph LR
     RM1[RM1 $20/u]-- raw material --> A1[A 15min/u]-- work in process --> C1[C 10min/u]
 {{< /mermaid >}}
 
-Then, **C processes the WIP** for 10 minutes. Please note that the C input is not RM1 anymore, since it was already transformed by A. It is also implied in the production flow diagram that:
+Then, **C processes the WiP** for 10 minutes. Please note that the C input is not RM1 anymore, since it was already transformed by A. It is also implied in the production flow diagram that:
 
-- RM1 is a **resource** to A, and WIP is a **resource** to C as well.
+- RM1 is a **resource** to A, and WiP is a **resource** to C as well.
 - RM1 is an **external** asset, since it comes from outside the process.
-- WIP is an **internal** asset, i.e. an intermediary result inside the process.
+- WiP is an **internal** asset, i.e. an intermediary result inside the process.
 - The transformation in RM1 is a **task** that requires 15 minutes of A's work.
-- Similarly, the WIP is processed by a **task** that requires 10 minutes from C.
+- Similarly, the WiP is processed by a **task** that requires 10 minutes from C.
 - A and C are workers with specific **skills**, also named "A" and "C" here.
 - It is convenient to separate the **worker** from its **skill**.
 - Actually the **task** is a **Stage** that requires a **skill**.
@@ -54,7 +54,7 @@ Then, **C processes the WIP** for 10 minutes. Please note that the C input is no
 
 We can also assure that the **resources** come from different sources:
 
-- RM and WIP are resources related to the **Cyclo**.
+- RM and WiP are resources related to the **Cyclo**.
 - Workers, tools, energy, shop floor area, etc. are implemented by the **Facility**.
 
 ## The Stage Model
@@ -76,7 +76,7 @@ classDiagram
     Resource <|-- Cyclo
     Resource <|-- Facility
     Cyclo <|-- RM : external
-    Cyclo <|-- WIP : internal
+    Cyclo <|-- WiP : internal
     Facility <|-- Worker
     Facility <|-- Tool
     Facility <|-- Energy
@@ -92,9 +92,9 @@ The **Stage** model highlights the following features:
 - The **Stage** proceeds to one or more **Stages**, until a  consumer **Product** is reached.
 - The consumer **Product** is the final and more important **Stage**.
 - The **Resource** is related to the **Cyclo** or to the **Facility**.
-- The **Cyclo Resource** may be **Raw Material (RM)** or **Work in Process (WIP)**.
+- The **Cyclo Resource** may be **Raw Material (RM)** or **Work in Process (WiP)**.
 - **RM** is an **external** resource, and it is also a **Product** coming from another **Process**.
-- **WIP** is an **internal** Process resource, still subject to  transformation.
+- **WiP** is an **internal** Process resource, still subject to  transformation.
 - The **Facility** resources are **Worker**, **Tool**, **Area**, and **Energy**, among others.
 - Both **Worker** and **Tool** have at least one **Skill**.
 - **Worker** & **Tool** may handle a **Tool** with a **Command**, but this is not mandatory.

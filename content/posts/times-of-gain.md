@@ -34,7 +34,7 @@ classDiagram
     Tool --> "1..n" Skill : has_skill
     Resource <|-- Cyclo : from_cyclo
     Cyclo <|-- RM : external
-    Cyclo <|-- WIP : internal
+    Cyclo <|-- WiP : internal
     Resource <|-- Facility : from_facility
     Facility <|-- FacilityInfra : infrastructure
     FacilityInfra <|-- Energy
@@ -60,9 +60,9 @@ stateDiagram
         [*] --> FacilityInfra
         [*] --> Skill
         Cyclo --> RM
-        Cyclo --> WIP
+        Cyclo --> WiP
         RM --> [*] : rm_ok
-        WIP --> [*] : wip_ok
+        WiP --> [*] : wip_ok
         FacilityInfra --> Energy
         FacilityInfra --> Area
         Energy --> [*] : energy_ok
@@ -77,8 +77,8 @@ stateDiagram
         execution
     }
     state Resource_Release {
-        [*] --> WIP
-        WIP --> Cyclo : wip_free
+        [*] --> WiP
+        WiP --> Cyclo : wip_free
         [*] --> Area
         Area --> FacilityInfra : area_free
         [*] --> Energy
@@ -92,7 +92,7 @@ stateDiagram
 
 ### Resource Allocation
 
-- From the **Cyclo** may eventually come **RM**, and **WIP** generated at previous **Stage**.
+- From the **Cyclo** may eventually come **RM**, and **WiP** generated at previous **Stage**.
 - **Infrastructure Resources** are obtained from the **Facility**, like Energy and Shop Floor Area.
 - The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and Workers.
 - For each required **Resource**, check its availability. If not available, the **Stage** must wait.
@@ -107,7 +107,7 @@ stateDiagram
 ### Resource Release
 
 - After execution, the allocated **Resources** may be freed and become available for other **Stages**.
-- Any resulting **WIP** must be released for the next **Stage** of the **Cyclo**.
+- Any resulting **WiP** must be released for the next **Stage** of the **Cyclo**.
 - Remaining Facility allocated **Resources** should be released to **FacilityInfra** and **FacilityOp**.
 - At Resource release, there may be a delay due to the **Resource Release Time**.
 - Some optimization may prevent **Facility** from eventual unnecessary release/reallocation, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.

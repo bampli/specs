@@ -18,9 +18,9 @@ stateDiagram
         [*] --> FacilityInfra
         [*] --> Skill
         Cyclo --> RM
-        Cyclo --> WIP
+        Cyclo --> WiP
         RM --> [*] : rm_ok
-        WIP --> [*] : wip_ok
+        WiP --> [*] : wip_ok
         FacilityInfra --> Energy
         FacilityInfra --> Area
         Energy --> [*] : energy_ok
@@ -35,8 +35,8 @@ stateDiagram
         execution
     }
     state Resource_Release {
-        [*] --> WIP
-        WIP --> Cyclo : wip_free
+        [*] --> WiP
+        WiP --> Cyclo : wip_free
         [*] --> Area
         Area --> FacilityInfra : area_free
         [*] --> Energy

@@ -38,7 +38,7 @@ sequenceDiagram
 
 ### Resource Allocation
 
-- From the **Cyclo** may eventually come and go assets like **RM** and/or **WIP**.
+- From the **Cyclo** may eventually come and go assets like **RM** and/or **WiP**.
 - **Infrastructure** are **Resources** supported by the **Facility**, like Energy and Shop Floor Area.
 - The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and Workers.
 - For each required **Resource**, check its availability. If it's not available, the **Stage** must await.
@@ -56,7 +56,7 @@ sequenceDiagram
 ### Resource Release
 
 - After execution, allocated **Resources** should be available to another **Stage**.
-- Any resulting **WIP** must be released to the next **Stage** in the **Cyclo**.
+- Any resulting **WiP** must be released to the next **Stage** in the **Cyclo**.
 - **Resources** allocated from the Facility are eventually released to **FacilityInfra** & **FacilityOp**.
 - At **Resource** release phase, there may be a delay due to the **Resource Release Time**.
 
