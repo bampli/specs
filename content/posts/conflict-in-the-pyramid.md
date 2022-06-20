@@ -160,7 +160,7 @@ With the world of gains, Goldratt changed the paradigm, obsessively focusing on 
 
 ## Ampli Business
 
-In order to guide investors and managers in their decisions towards the global optimum, an Information System model consisting of simple combined elements that express management and management best practices is needed. Ampli Business proposes a four-tiered standardization effort:
+Ampli Business is an intuitive Information System Model that combines simple elements to express management best practices to guide investors and managers in their decisions towards the global optimum. It proposes a four-tiered standardization effort:
 
 1. Company Indicators
 2. Cyclo: The Gain Machine
