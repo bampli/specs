@@ -33,7 +33,7 @@ The following relationships rule the interaction between the Company and the Pla
 ## PLANET
 
 - The **Planet** is a living **System**
-- populated by cooperative **Work**
+- populated by **Products**
 - made by a **Process**
 - expressed by a **bAmpli Circuit**
 - with at least one **bAmpli**
