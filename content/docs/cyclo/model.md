@@ -29,13 +29,13 @@ classDiagram
     Planet --> "1..n" Product : populated_by
     Planet --> "1..n" RM : provides
     Product --> "1..n" Process : made_by
-    Product --> WiP : Sell
+    Product --> WiP : sells
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
     Stage --> "1..n" WiP : 3.transforms
     Stage --> "1..n" Facility : 2.allocates
     Stage --> Stage : previous_next
-    WiP --> RM : Buy
+    WiP --> RM : buys
     FacilityInfra <|-- Energy
     FacilityInfra <|-- Area
     FacilityInfra <|-- Other
