@@ -1,4 +1,4 @@
 baseURL = "https://bampli.netlify.app/"
 languageCode = "en-us"
-title = "bAmpli 0.11.1"
+title = "bAmpli 0.11.2"
 theme = "book"
