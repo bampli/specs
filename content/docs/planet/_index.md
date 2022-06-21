@@ -1,25 +1,13 @@
 ---
-title: "Planet"
+title: "Planet & Company"
 bookFlatSection: false
 weight: 45
 ---
 
-# The Planet
+# The Planet & Company
 
-The following relationships rule the interaction between the Company and the Planet.
+The following relationships rule the interaction between the Planet and the Company.
 {{< columns >}}
-
-## COMPANY
-
-- The **Company** has **Investors**
-- that own **Shares**
-- that decide how to manage a **Facility**
-- that implements a **bAmpli Circuit**
-- with at least one **bAmpli**
-- that handles at least one **Cyclo**
-- composed by one **Stage** or more.
-
-<--->
 
 ## PLANET
 
@@ -31,9 +19,21 @@ The following relationships rule the interaction between the Company and the Pla
 - that handles at least one **Cyclo**
 - composed by one **Stage** or more.
 
+<--->
+
+## COMPANY
+
+- The **Company** has **Investors**
+- that own **Shares**
+- that decide how to manage a **Facility**
+- that implements a **bAmpli Circuit**
+- with at least one **bAmpli**
+- that handles at least one **Cyclo**
+- composed by one **Stage** or more.
+
 {{< /columns >}}
 
-The following diagram clarifies the Company & Planet containerships.
+The following diagram clarifies the Planet & Company containerships.
 
 ![Z1 1 company-planet-2](https://user-images.githubusercontent.com/86032/81451969-0bd8d580-915c-11ea-807f-3185ef213fed.png)
 
