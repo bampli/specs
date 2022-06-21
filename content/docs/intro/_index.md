@@ -19,9 +19,9 @@ To assist investors and managers with their decision-making toward the global op
 
 To answer these questions, let's evaluate the situation and strategize actions:
 
-- [What to change](what-to-change)?
-- [To what to change](to-what-to-change)?
-- [How to change](how-to-change)?
+- [**What to change**](what-to-change)?
+- [**To what to change**](to-what-to-change)?
+- [**How to change**](how-to-change)?
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
