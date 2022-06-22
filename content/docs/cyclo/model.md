@@ -7,22 +7,22 @@ bookToc: false
 
 The following rules apply to a **Planet** populated by **Products**, made by a **Process** that may extract Raw Material **RM** from the **Planet**.
 
-- The **Process** is specified by **Cyclos** that are grouped in **Stages**.
+- The **Process** is specified by **Cyclos**, grouped in **Stages**.
 - The **Facility** provides infrastructural & operational **Resources**. 
-- **Stages** consumes **Resources**, both from **Facility** and from **Cyclo**.
-- The **Stage** allocates **Resources** from the **Facility** to accomplish its task.
+- **Stage** and **WiP** are first class citizens of **Cyclo** operation.
+- The **Stage** allocates **Resources** to accomplish its task.
 - Every **Stage** requires **Skills** to accomplish its task.
 - The **Skill** is provided by a combination of **Workers** and/or **Tools**.
-- The **Stage** also allocates **Resources** from the **Cyclo** to accomplish its task.
-- The **Stage** extracts **RM** from **Planet** as Work In Process **WiP**.
-- The **Stage** transforms **WiP** through the **Cyclo** until it becomes **Product**.
-- **Product** and **RM** are both derived from **WiP**, with some logistic between them.
-- **WiP** becomes **Product** that may become **RM** to another **Cyclo**.
+- The **Stage** buys **RM** from **Planet** as Work In Process **WiP**.
+- The **Stage** transforms **WiP** through the **Cyclo**.
+- The **Stage** sells **Product** to **Planet** as Work In Process **WiP**.
+- **Product** and **RM** are extensions of **WiP**, with some logistic between them.
+- **WiP** becomes **Product** that becomes **RM** that becomes **WiP** at another **Cyclo**.
 
 The **Stage**, detailed below, allocates **Facility** resources divided into two categories:
 
-- **FacilityInfra**: includes infrastructure items, like Shop Floor Area, Energy, etc.
-- **FacilityOp**: includes operational items with **Skills**, like Tools and Workers.
+- **Facility Infrastructure**: includes items like Shop Floor Area, Energy, Equipment, etc.
+- **Facility Operation**: includes operational items with **Skills**, like **Worker** and **Tool**.
 
 {{< mermaid >}}
 classDiagram
@@ -36,18 +36,18 @@ classDiagram
     Stage --> "1..n" Facility : 2.allocates
     Stage --> Stage : previous_next
     WiP --> RM : buys
-    FacilityInfra <|-- Energy
-    FacilityInfra <|-- Area
-    FacilityInfra <|-- Other
+    Infrastructure <|-- Energy
+    Infrastructure <|-- Area
+    Infrastructure <|-- Other
     Worker --> "1..n" Skill : has_skill
     Worker --> "0..n" Worker : commands
     Worker --> "0..n" Tool : commands
     Tool --> "0..n" Tool : commands
     Tool --> "1..n" Skill : has_skill
-    Facility <|-- FacilityInfra : infrastructure
-    FacilityOp <|-- Worker
-    FacilityOp <|-- Tool
-    Facility <|-- FacilityOp : operation
+    Facility <|-- Infrastructure
+    Operation <|-- Worker
+    Operation <|-- Tool
+    Facility <|-- Operation
     Stage --> "1..n" Skill : 1.requires
 {{< /mermaid >}}
 

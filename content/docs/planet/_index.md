@@ -4,7 +4,7 @@ bookFlatSection: false
 weight: 45
 ---
 
-# The Planet & Company
+# Planet & Company
 
 The following relationships rule the interaction between the Planet and the Company.
 {{< columns >}}
