@@ -38,10 +38,10 @@ sequenceDiagram
 
 ### Resource Allocation
 
-- From the **Cyclo** may eventually come and go assets like **RM** and/or **WiP**.
+- From the **Cyclo** may eventually come and go assets like **WiP**.
 - **Infrastructure** are **Resources** supported by the **Facility**, like Energy and Shop Floor Area.
 - The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and Workers.
-- For each required **Resource**, check its availability. If it's not available, the **Stage** must await.
+- For each required **Resource**, check its availability. If it's not available, the **Stage** awaits.
 - At **Resource** allocation phase, there may be a delay due to the **Resource Allocation Time**.
 
 ### Stage Setup
