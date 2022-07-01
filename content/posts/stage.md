@@ -31,11 +31,11 @@ graph LR
     RM3[RM3 $20/u] --> A3[A 10min/u] --> B3[B 15min/u] --> D2[D 5min/u] --> Q[Q $100/U 50u/wk]
 {{< /mermaid >}}
 
-Initially, the partial elements shown below represent **RM1 being processed by A** for 15 minutes. This means that something happens to the raw material RM1, causing its exit from A in a different state. This new asset is actually a fragment, known by the generic term  **work in process (WiP)**.
+Initially, the partial elements shown below represent **RM1 being processed by A** for 15 minutes. This means that something happens to the raw material RM1, causing its exit from A in a different state. This new asset is actually a fragment, known by the generic term  **work-in-process (WiP)**.
 
 {{< mermaid >}}
 graph LR
-    RM1[RM1 $20/u]-- raw material --> A1[A 15min/u]-- work in process --> C1[C 10min/u]
+    RM1[RM1 $20/u]-- raw material --> A1[A 15min/u]-- work-in-process --> C1[C 10min/u]
 {{< /mermaid >}}
 
 Then, **C processes the WiP** for 10 minutes. Please note that the C input is not RM1 anymore, since it was already transformed by A. It is also implied in the production flow diagram that:

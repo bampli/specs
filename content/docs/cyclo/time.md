@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Times of Gain
 
-The actual amount of time each **Stage** will require at run time is defined by the **Process**, responsible for the **Cyclo** design, and counting on with support provided by the **Facility**. All timing should be analyzed as **statistical distributions**, subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [**TPM**](/posts/tpm/) (Total Productive Maintenance) directives.
+The actual amount of time each **Stage** will require at run time is defined by the **Process**, responsible for the **Cyclo** design, and counting on with support provided by the **Facility**. All timing should be analyzed as [**statistical distributions**](/posts/stats), subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [**TPM**](/posts/tpm/) (Total Productive Maintenance) directives.
 
 The **Stage** timing includes the four phases listed below:
 
