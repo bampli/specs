@@ -1,7 +1,7 @@
 ---
 author: "José Motta Lopes"
 date: 2022-07-01
-linktitle: Statistics
+linktitle: Statistical Distributions
 menu:
   main:
     parent: tutorials
@@ -13,7 +13,7 @@ tags: [
     "how-to-change",
 ]
 ---
-## Statistics
+## Statistical Distributions
 
 The amount of time each **Stage** requires at run time should be treated as a frequency distribution to be *designed* by the **Process**, ultimately by the **Cyclo**. When implemented by the **Facility**, the [Times of Gain](/docs/cyclo/time) from the running **Cyclo** should be captured and analyzed, in order to check how close they are from the expected timing.
 
