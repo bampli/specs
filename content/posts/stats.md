@@ -1,7 +1,7 @@
 ---
 author: "José Motta Lopes"
 date: 2022-07-01
-linktitle: Statistics
+linktitle: Statistical Distributions
 menu:
   main:
     parent: tutorials
@@ -13,7 +13,7 @@ tags: [
     "how-to-change",
 ]
 ---
-## Statistics
+## Statistical Distributions
 
 The amount of time each **Stage** requires at run time should be treated as a frequency distribution to be *designed* by the **Process**, ultimately by the **Cyclo**. When implemented by the **Facility**, the [Times of Gain](/docs/cyclo/time) from the running **Cyclo** should be captured and analyzed, in order to check how close they are from the expected timing.
 
@@ -25,6 +25,10 @@ Inspired on Tukey's idea, referenced in Martin Bland's [*An Introduction to Medi
 
 The *box* shows the distance between the quartiles, with the median marked as a *line* in between, and the *whiskers* at extremes. Plots are also useful for comparison, the example shows results from patients with AIDS, AIDS Related complex, HIV positive but asymptomatic, and normal.
 
+The confidence interval is also a good way for narrowing the estimated percentiles. Some methods to be studied are listed below:
+
+- [95% confidence interval](https://www-users.york.ac.uk/~mb55/intro/cicent.htm)
+- [Normal range or reference interval](https://www-users.york.ac.uk/~mb55/intro/refint.htm)
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
