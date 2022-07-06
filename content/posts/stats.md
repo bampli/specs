@@ -13,11 +13,11 @@ tags: [
     "how-to-change",
 ]
 ---
-## Statistical Distributions
-
 The amount of time each **Stage** requires at run time should be treated as a frequency distribution to be *designed* by the **Process**, ultimately by the **Cyclo**. When implemented by the **Facility**, the [Times of Gain](/docs/cyclo/time) from the running **Cyclo** should be captured and analyzed, in order to check how close they are from the expected timing.
 
 The timing analysis should detect variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [**TPM**](/posts/tpm/) (Total Productive Maintenance) directives.
+
+## Summary of a frequency distribution
 
 Inspired on Tukey's idea, referenced in Martin Bland's [*An Introduction to Medical Statistics*](https://www-users.york.ac.uk/~mb55/intro/quantile.htm), a measure based on **Quartiles** & **Box/Whisker Plots** would summarize frequency distributions in a few numbers. The image below shows that median, quartiles, maximum and minimum may be used as a convenient five figure summary of a distribution.
 
@@ -25,7 +25,7 @@ Inspired on Tukey's idea, referenced in Martin Bland's [*An Introduction to Medi
 
 The *box* shows the distance between the quartiles, with the median marked as a *line* in between, and the *whiskers* at extremes. Plots are also useful for comparison, the example shows results from patients with AIDS, AIDS Related complex, HIV positive but asymptomatic, and normal.
 
-The confidence interval is also a good way for narrowing the estimated percentiles. Some methods to be studied are listed below:
+The confidence interval narrows the estimated percentiles, methods are listed below:
 
 - [95% confidence interval](https://www-users.york.ac.uk/~mb55/intro/cicent.htm)
 - [Normal range or reference interval](https://www-users.york.ac.uk/~mb55/intro/refint.htm)
