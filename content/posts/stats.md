@@ -7,7 +7,7 @@ menu:
     parent: tutorials
 #next: /posts/github-pages-blog
 #prev: /posts/automated-deployments
-title: Statistics
+title: Statistical Distributions
 weight: 100
 tags: [
     "how-to-change",
