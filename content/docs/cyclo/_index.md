@@ -23,16 +23,18 @@ Products are bought, processed, combined and become other products to be sold. E
 
 ![Y3 1 Cyclo bw](https://user-images.githubusercontent.com/86032/79046804-5dd41d00-7be9-11ea-9239-780095caaffb.png)
 
-At the top, Earth's first green arrow to “Sn” indicates the money from the consumer market that pays for Product Sales (PS). This money is used to pay the Raw Materials (RM) used in the Process Stages. The remaining balance is the Gain (G) which contributes to Company's Net Profit.
+At the top, Earth's first green arrow to **Stage** “Sn” indicates the money from the consumer market that pays for Product Sales (PS). This money is used to pay the Raw Materials (RM) used in the Process Stages. The remaining balance is the Gain (G) which contributes to Company's Net Profit.
 
-On the other hand, the outer blue arrows leaving Earth to "S1" represent assets traversing the path in the opposite direction. Raw materials are purchased, enter into the process, and become products that the company intends to sell.
+On the other hand, the outer blue arrows leaving Earth to **Stage** "S1" represent assets traversing the path in the opposite direction. Raw materials are purchased, enter into the process, and become products that the company intends to sell.
 
-**Stages** depend on each other to keep both streams spinning simultaneously:
+All **Stages** on the chain depend on each other to keep BOTH streams spinning simultaneously.
 
-- Money from selling products to the market by remunerating suppliers.
-- Assets collected in the market being transformed into products sold;
+- Money stream from selling products to the market by remunerating suppliers.
+- Assets stream collected in the market being transformed into products sold;
 
-These two streams are closely related, one only happens together with the other. Without payments there are no raw materials in production. Without raw materials there are no revenues. This is crucial for the most important measure to happen! See more details [here](/posts/cyclo/).
+These two streams are closely related, one only happens together with the other. Without payments there are no raw materials in production. Without raw materials there are no revenues. This is crucial for the most important measure to happen! The **Gain**!
+
+More details [here](/posts/cyclo/).
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**

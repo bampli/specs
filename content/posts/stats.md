@@ -25,8 +25,16 @@ Inspired on Tukey's idea, referenced in Martin Bland's [*An Introduction to Medi
 
 The *box* shows the distance between the quartiles, with the median marked as a *line* in between, and the *whiskers* at extremes. Plots are also useful for comparison, the example shows results from patients with AIDS, AIDS Related complex, HIV positive but asymptomatic, and normal.
 
-The confidence interval narrows the estimated percentiles, methods are listed below:
+## Distribution
 
+- **name**: Distribution name.
+- **sample**: [data] array
+- **size**: Sample size.
+- **is_normal**: True if sample fits a normal distribution.
+- **is_uniform**: True if sample fits an uniform distribution.
+- **summary**: Object with {max, qt3, med, qt1, min}.
+
+TODO: Confidence interval narrows estimated percentiles?
 - [95% confidence interval](https://www-users.york.ac.uk/~mb55/intro/cicent.htm)
 - [Normal range or reference interval](https://www-users.york.ac.uk/~mb55/intro/refint.htm)
 
