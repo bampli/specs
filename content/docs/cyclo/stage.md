@@ -74,12 +74,13 @@ sequenceDiagram
 
 ## Workflow
 
-The diagram below shows the allocation, execution and release phases for each **Stage**.
+The diagram below shows the allocation, setup, execution and release phases available for each **Stage**.
 
 {{< mermaid >}}
 stateDiagram
     [*] --> Resource_Allocation : Cyclo is running
-    Resource_Allocation --> Stage_Execution
+    Resource_Allocation --> Stage_Setup
+    Stage_Setup --> Stage_Execution
     Stage_Execution --> Resource_Release
     Resource_Release --> [*]
     state Resource_Allocation {
@@ -94,6 +95,9 @@ stateDiagram
         Tool --> [*] : tool_skill_ok
         FacilityOp --> Worker
         Worker --> [*] : worker_skill_ok
+    }
+    state Stage_Setup {
+        setup
     }
     state Stage_Execution {
         getWiP --> execute
