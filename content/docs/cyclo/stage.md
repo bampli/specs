@@ -74,7 +74,7 @@ sequenceDiagram
 
 ## Workflow
 
-The diagram below shows the allocation, execution and release phases for each **Stage**. The Stage execution can 
+The diagram below shows the allocation, execution and release phases for each **Stage**.
 
 {{< mermaid >}}
 stateDiagram
