@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Stage
 
-When the **Cyclo** is running, each **Stage** should allocate all required **Resources** before receiving the "green" light to be executed.
+When the **Cyclo** is running, each **Stage** should allocate all required **Resources**, before receiving the "green" light to execute.
 
 ## State
 
@@ -19,7 +19,7 @@ Some optimization may prevent unnecessary release/reallocation delays, according
 
 ## Time Distributions
 
-During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following elapsed time distributions:
+During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following *elapsed time* frequency distributions:
 
 - **StageFreeTime**: Time the Stage is freely available available at Facility.
 - **ResourceAllocTime**: Time spent allocating Resources from Facility.
@@ -27,7 +27,7 @@ During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** sho
 - **StageReadyTime**: Time the Stage is ready for Production.
 - **ResourceReleaseTime**: Time spent decomissioning the Stage.
 
-**WorkingTime = StageFreeTime + ResourceAllocTime + StageSetupTime + StageReadyTime + ResourceReleaseTime** 
+*WorkingTime = StageFreeTime + ResourceAllocTime + StageSetupTime + StageReadyTime + ResourceReleaseTime* 
 
 But StageReadyTime, which means the **Stage** is ready for Production, can be split even more:
 
@@ -36,7 +36,7 @@ But StageReadyTime, which means the **Stage** is ready for Production, can be sp
 - StagePutWipTime: Time to put properly the WiP for the next Stage.
 - StageIdleTime: Time the Stage is ready for Production, but idle due to WiP shortage.
 
-**StageReadyTime = StageGetWipTime + StageExecTime + StagePutWipTime + StageIdleTime**  
+*StageReadyTime = StageGetWipTime + StageExecTime + StagePutWipTime + StageIdleTime*  
 
 ## Workflow
 
