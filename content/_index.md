@@ -36,7 +36,7 @@ The **Angel Cyclo** provides the necessary investments to leverage three other d
 
 In this case, when the Angel sells its “product”, the entire Startup is negotiated, disappearing from the diagram and fattening the Angel's net profit!
 
-This bAmpli circuit allows effective design, planning and management for each Cyclo separately using a powerful combinations of decision support tools like **SPC**, **JIT**, **TPM**, and **TOC** among others.
+This bAmpli circuit allows effective business design, planning and management, using the most powerful combinations of decision support tools available in history, including **SPC** (Statistical Process Control), **JIT** (Just in Time), **TPM** (Total Productive Maintenance), and **TOC** (Theory of Constraints), among others.
 
 {{< /columns >}}
 
