@@ -10,22 +10,33 @@ bookToc: false
 **At every level, at any time, share a vision of the organization and its role in globalization.**
 {{< /hint >}}
 
+## bAmpli Architecture
+
+{{< columns >}}
+![bAmpli-Architecture-home](https://user-images.githubusercontent.com/86032/178278171-58ee24fb-6ba4-4d17-aaa8-219429279dc1.png)
+
+<--->
+
+![bampli](https://user-images.githubusercontent.com/86032/79046226-0aac9b00-7be6-11ea-9664-d33b7c5b99cd.png)
+
+{{< /columns >}}
+
 {{< columns >}}
 
+![Y4 4 circ anjo bw](https://user-images.githubusercontent.com/86032/79048410-3f731f00-7bf3-11ea-91a7-262ae1aadc67.png)
+
+<--->
 ## bAmpli Circuits
 
 Cyclos and Business Amplifiers form **bAmpli Circuits**.
 
-For example, the circuit at right shows four Business Amplifiers, each one with its own Cyclo.
+For example, the circuit at left shows four Business Amplifiers, each one with its own Cyclo. 
 
 The **Angel Cyclo** provides the necessary investments to leverage three other distinct **Startup Cyclos**.
 
 In this case, when the Angel sells its “product”, the entire Startup is negotiated, disappearing from the diagram and fattening the Angel's net profit!
 
 This bAmpli circuit allows effective design, planning and management for each Cyclo separately using a powerful combinations of decision support tools like **SPC**, **JIT**, **TPM**, and **TOC** among others.
-
-<--->
-![Y4 4 circ anjo bw](https://user-images.githubusercontent.com/86032/79048410-3f731f00-7bf3-11ea-91a7-262ae1aadc67.png)
 
 {{< /columns >}}
 
