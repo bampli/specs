@@ -1,14 +1,14 @@
 ---
-title: Cyclo Graph
+title: Cyclo graph
 weight: 10
 ---
-# Cyclo Graph
+# Cyclo graph
 
 The Cyclo graph has **Product** and **Stage** vertices and a bidirecional **sendW** edge.
 
 ![cyclo-v1-schema](https://user-images.githubusercontent.com/86032/86792421-dad42e80-c040-11ea-98c6-7e7f324c8d1b.jpg)
 
-The raw material is a product that enters the process through a stage. Then, it becomes a work-in-process **WiP** asset that is sent from one stage to another, until the final product is obtained. The **sendW** edge expects to send **WiPs** along the production flow. Clustered by **timestep**, the edges attach ascending sequences of serial numbers to facilitate estimation of [production rate](https://en.wikipedia.org/wiki/German_tank_problem).
+The raw material is a product that enters the process through a stage. Then, it becomes a work-in-process asset (**WiP**) that is sent from one stage to another, until the final product is obtained. The **sendW** edge expects to send **WiPs** along the production flow. Clustered by **timestep**, it should attach ascending sequences of serial numbers to facilitate estimation of [production rate](https://en.wikipedia.org/wiki/German_tank_problem).
 
 ```groovy
 // cyclo-v1-schema
@@ -51,9 +51,9 @@ More details are shown at the links below:
 - Corresponding [CQL](https://github.com/bampli/bampli/blob/master/datastax/models/cyclo-v1-schema.cql) schema for Cassandra. 
 - The schema is inspired by the Datastax [graph-book](https://github.com/datastax/graph-book).
 
-## P&Q Factory Cyclo
+## P&Q Factory
 
-The [**P&Q Factory**](/posts/pq-factory/) is used as a sample, its manufacturing production flow is shown below:
+The [**P&Q Factory**](/posts/pq-factory/) manufactures products P & Q, using the following production flow:
 
 {{< mermaid >}}
 graph LR
@@ -64,7 +64,7 @@ graph LR
     RM3[RM3 $20/u] --> A3[A 10min/u] --> B3[B 15min/u] --> D2[D 5min/u] --> Q[Q $100/U 50u/wk]
 {{< /mermaid >}}
 
-It is also represented according to the product and stage vertices, as shown below:
+It is also represented by a graph with the respective product and stage vertices, as shown below:
 
 ![p q-graph](https://user-images.githubusercontent.com/86032/86799006-d2332680-c047-11ea-8d02-9da1042c1e51.png)
 
