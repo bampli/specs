@@ -28,7 +28,7 @@ bookToc: false
 <--->
 ## bAmpli Circuits
 
-Cyclos and Business Amplifiers form **bAmpli Circuits**, an effective philosophy for business design, planning and management.
+**Cyclos** and **Business Amplifiers** form **bAmpli Circuits**, an effective philosophy for business design, planning and management.
 
 Use the most powerful combinations of decision support tools available in history, including **SPC** (Statistical Process Control), **JIT** (Just in Time), **TPM** (Total Productive Maintenance), and **TOC** (Theory of Constraints), among others.
 

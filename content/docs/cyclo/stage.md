@@ -10,12 +10,12 @@ When the **Cyclo** is running, each **Stage** should allocate all required **Res
 ## State
 
 - **FREE**: Stage that requires Skills is created at Facility and available.
-- **ALLOC**: Stage is allocating Resources from Facility Infrastrucure & Operation.
+- **ALLOC**: Stage is allocating Resources from Facility Infrastructure & Operation.
 - **SETUP**: Stage with Skills satisfied, preparing to initiate Production.
 - **READY**: Stage is ready for Production, getting the WiP.
 - **EXEC**: Stage is effectively transforming the WiP.
 - **WIP**: Stage is putting the transformed WiP.
-- **RELEASE**: Stage is releasing Resources from Facility Infrastrucure & Operation.
+- **RELEASE**: Stage is releasing Resources from Facility Infrastructure & Operation.
 
 Some optimization may prevent unnecessary release/reallocation delays, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.
 
@@ -33,9 +33,9 @@ During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** sho
 
 But StageReadyTime, which means the **Stage** is ready for Production, can be split even more:
 
-- StageGetWipTime: Time to get the necessary WiPs from previous Stage.
-- StageExecTime: Time the Stage takes to effectively transform the WiP.
-- StagePutWipTime: Time to put properly the WiP for the next Stage.
+- StageGetWipTime: Time to gather the necessary **WiP**.
+- StageExecTime: Time the Stage takes to effectively transform the **WiP**.
+- StagePutWipTime: Time the Stage takes to put properly the **WiP**.
 
 *StageReadyTime = StageGetWipTime + StageExecTime + StagePutWipTime*  
 
