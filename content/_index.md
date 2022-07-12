@@ -28,15 +28,15 @@ bookToc: false
 <--->
 ## bAmpli Circuits
 
-Cyclos and Business Amplifiers form **bAmpli Circuits**.
+Cyclos and Business Amplifiers form **bAmpli Circuits**, an effective philosophy for business design, planning and management.
 
-For example, the circuit at left shows four Business Amplifiers, each one with its own Cyclo. 
+Use the most powerful combinations of decision support tools available in history, including **SPC** (Statistical Process Control), **JIT** (Just in Time), **TPM** (Total Productive Maintenance), and **TOC** (Theory of Constraints), among others.
 
-The **Angel Cyclo** provides the necessary investments to leverage three other distinct **Startup Cyclos**.
+For example, the circuit at left shows four **Business Amplifiers**, each one with its own **Cyclo**, generating **Gain** for the business.
 
-In this case, when the Angel sells its “product”, the entire Startup is negotiated, disappearing from the diagram and fattening the Angel's net profit!
+The **Angel** provides the necessary investments to leverage three other distinct **Startups**, each one with its **Cyclo** & **Gain**.
 
-This bAmpli circuit allows effective business design, planning and management, using the most powerful combinations of decision support tools available in history, including **SPC** (Statistical Process Control), **JIT** (Just in Time), **TPM** (Total Productive Maintenance), and **TOC** (Theory of Constraints), among others.
+In this case, when the **Angel** sells its *product*, the entire Startup is negotiated, disappearing from the diagram and fattening the Angel's net profit!
 
 {{< /columns >}}
 
