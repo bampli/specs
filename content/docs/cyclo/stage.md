@@ -10,11 +10,11 @@ When the **Cyclo** is running, each **Stage** should allocate all required **Res
 ## State
 
 - **FREE**: Stage that requires Skills is created at Facility and available.
-- **ALLOC**: Stage is allocating Resources from Facility Infrastructure & Operation.
+- **ALLOCATION**: Stage is allocating Resources from Facility Infrastructure & Operation.
 - **SETUP**: Stage with Skills satisfied, preparing to initiate Production.
 - **READY**: Stage is ready for Production, getting the WiP.
 - **EXEC**: Stage is effectively transforming the WiP.
-- **WIP**: Stage is putting the transformed WiP.
+- **WIP**: Stage is putting the WiP.
 - **RELEASE**: Stage is releasing Resources from Facility Infrastructure & Operation.
 
 Some optimization may prevent unnecessary release/reallocation delays, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.
@@ -23,21 +23,21 @@ Some optimization may prevent unnecessary release/reallocation delays, according
 
 During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following *elapsed time* [frequency distributions](/posts/stats):
 
-- **StageFreeTime**: Time the Stage is freely available at Facility.
-- **ResourceAllocTime**: Time spent allocating Resources from Facility.
-- **StageSetupTime**: Time spent with Stage setup.
-- **StageReadyTime**: Time the Stage is ready for Production.
-- **ResourceReleaseTime**: Time spent decomissioning the Stage.
+- **FreeTime**: Time the Stage is freely available at Facility.
+- **AllocationTime**: Time spent allocating Resources from Facility.
+- **SetupTime**: Time spent with Stage setup.
+- **ReadyTime**: Time the Stage is ready for Production.
+- **ReleaseTime**: Time spent decomissioning the Stage.
 
-*WorkingTime = StageFreeTime + ResourceAllocTime + StageSetupTime + StageReadyTime + ResourceReleaseTime* 
+*WorkingTime = FreeTime + AllocationTime + SetupTime + ReadyTime + ReleaseTime* 
 
-But StageReadyTime, which means the **Stage** is ready for Production, can be split even more:
+The **ReadyTime**, when the **Stage** is ready for Production, can be split even more:
 
-- StageGetWipTime: Time to gather the necessary **WiP**.
-- StageExecTime: Time the Stage takes to effectively transform the **WiP**.
-- StagePutWipTime: Time the Stage takes to put properly the **WiP**.
+- **GetWipTime**: Time to gather the necessary **WiP**.
+- **ExecTime**: Time the Stage takes to effectively transform the **WiP**.
+- **PutWipTime**: Time the Stage takes to put properly the **WiP**.
 
-*StageReadyTime = StageGetWipTime + StageExecTime + StagePutWipTime*  
+*ReadyTime = GetWipTime + ExecTime + PutWipTime*  
 
 ## Timing
 
@@ -46,29 +46,29 @@ The following diagram represents the timeline including all states:
 {{< mermaid >}}
 sequenceDiagram
     rect rgb(255, 0, 255, .3)
-        ALLOC-->>SETUP: ResourceAllocTime
+        ALLOCATION-->>SETUP: AllocationTime
     end
     rect rgb(255, 255, 0, .3)
-        SETUP-->>READY: StageSetupTime
+        SETUP-->>READY: SetupTime
     end
 
     rect rgb(0, 255, 0, .3)
-        READY->>EXEC: StageGetWipTime
+        READY->>EXEC: GetWipTime
     end
     rect rgb(0, 255, 0, .3)
-        EXEC->>WIP: StageExecTime
+        EXEC->>WIP: ExecTime
     end
     rect rgb(0, 255, 0, .3)
-        WIP->>RELEASE: StagePutWipTime
+        WIP->>RELEASE: PutWipTime
     end
     rect rgb(0, 255, 0, .3)
-        READY->>RELEASE: StageReadyTime
+        READY->>RELEASE: ReadyTime
     end
     rect rgb(255, 0, 255, .3)
-        RELEASE-->>FREE: ResourceReleaseTime
+        RELEASE-->>FREE: ReleaseTime
     end
     rect rgb(0, 0, 255, .3)
-        ALLOC->>FREE: StageTotalTime
+        ALLOCATION->>FREE: TotalTime
     end
 {{< /mermaid >}}
 
@@ -78,12 +78,12 @@ The diagram below shows the allocation, setup, execution and release phases avai
 
 {{< mermaid >}}
 stateDiagram
-    [*] --> Resource_Allocation : Cyclo is running
-    Resource_Allocation --> Stage_Setup
-    Stage_Setup --> Stage_Execution
-    Stage_Execution --> Resource_Release
-    Resource_Release --> [*]
-    state Resource_Allocation {
+    [*] --> ALLOCATION : Cyclo is running
+    ALLOCATION --> SETUP
+    SETUP --> READY
+    READY --> RELEASE
+    RELEASE --> [*]
+    state ALLOCATION {
         [*] --> FacilityInfra
         [*] --> Skill
         FacilityInfra --> Energy
@@ -96,15 +96,15 @@ stateDiagram
         FacilityOp --> Worker
         Worker --> [*] : worker_skill_ok
     }
-    state Stage_Setup {
+    state SETUP {
         setup
     }
-    state Stage_Execution {
-        getWiP --> execute
-        execute --> putWiP
+    state READY {
+        getWiP --> EXEC
+        EXEC --> putWiP
         putWiP
     }
-    state Resource_Release {
+    state RELEASE {
         [*] --> Area
         Area --> FacilityInfra : area_free
         [*] --> Energy
