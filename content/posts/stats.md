@@ -1,13 +1,13 @@
 ---
 author: "José Motta Lopes"
 date: 2022-07-01
-linktitle: Statistical Distributions
+linktitle: Frequency distributions
 menu:
   main:
     parent: tutorials
 #next: /posts/github-pages-blog
 #prev: /posts/automated-deployments
-title: Statistical Distributions
+title: Frequency distributions
 weight: 100
 tags: [
     "how-to-change",
@@ -28,11 +28,11 @@ The *box* shows the distance between the quartiles, with the median marked as a 
 ## Distribution
 
 - **name**: Distribution name.
-- **sample**: [data] array
+- **sample**: [data] array.
 - **size**: Sample size.
 - **is_normal**: True if sample fits a normal distribution.
 - **is_uniform**: True if sample fits an uniform distribution.
-- **summary**: Object with {max, qt3, med, qt1, min}.
+- **value**: {max, qt3, med, qt1, min} as distribution summary.
 
 TODO: Confidence interval narrows estimated percentiles?
 - [95% confidence interval](https://www-users.york.ac.uk/~mb55/intro/cicent.htm)
