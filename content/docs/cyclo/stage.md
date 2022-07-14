@@ -21,7 +21,7 @@ Some optimization may prevent unnecessary release/reallocation delays, according
 
 ## Time Distributions
 
-During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following *elapsed time* frequency distributions:
+During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following *elapsed time* [frequency distributions](/posts/stats):
 
 - **StageFreeTime**: Time the Stage is freely available at Facility.
 - **ResourceAllocTime**: Time spent allocating Resources from Facility.
