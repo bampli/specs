@@ -53,7 +53,7 @@ More details are shown at the links below:
 
 ## P&Q Factory
 
-The [**P&Q Factory**](/posts/pq-factory/) manufactures products P & Q, using the following production flow:
+The [**P&Q Factory**](/posts/pq-factory/) manufactures P & Q in a production flow that requires **Skills** A, B, C, and D:
 
 {{< mermaid >}}
 graph LR

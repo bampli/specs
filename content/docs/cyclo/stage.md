@@ -10,7 +10,7 @@ When the **Cyclo** is running, each **Stage** should allocate all required **Res
 ## State
 
 - **FREE**: Stage that requires Skills is created at Facility and available.
-- **ALLOCATION**: Stage is allocating Resources from Facility Infrastructure & Operation.
+- **ALLOC**: Stage is allocating Resources from Facility Infrastructure & Operation.
 - **SETUP**: Stage with Skills satisfied, preparing to initiate Production.
 - **READY**: Stage is ready for Production, getting the WiP.
 - **EXEC**: Stage is effectively transforming the WiP.
@@ -46,7 +46,7 @@ The following diagram represents the timeline including all states:
 {{< mermaid >}}
 sequenceDiagram
     rect rgb(255, 0, 255, .3)
-        ALLOCATION-->>SETUP: AllocationTime
+        ALLOC-->>SETUP: AllocationTime
     end
     rect rgb(255, 255, 0, .3)
         SETUP-->>READY: SetupTime
@@ -68,7 +68,7 @@ sequenceDiagram
         RELEASE-->>FREE: ReleaseTime
     end
     rect rgb(0, 0, 255, .3)
-        ALLOCATION->>FREE: TotalTime
+        ALLOC->>FREE: TotalTime
     end
 {{< /mermaid >}}
 
@@ -78,12 +78,12 @@ The diagram below shows the allocation, setup, execution and release phases avai
 
 {{< mermaid >}}
 stateDiagram
-    [*] --> ALLOCATION : Cyclo is running
-    ALLOCATION --> SETUP
+    [*] --> ALLOC : Cyclo is running
+    ALLOC --> SETUP
     SETUP --> READY
     READY --> RELEASE
     RELEASE --> [*]
-    state ALLOCATION {
+    state ALLOC {
         [*] --> FacilityInfra
         [*] --> Skill
         FacilityInfra --> Energy
