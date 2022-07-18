@@ -5,16 +5,16 @@ bookToc: false
 ---
 # Stage
 
-When the **Cyclo** is running, each **Stage** should allocate all required **Resources**, before receiving the "green" light to execute.
+Before the **Cyclo** can receive the "green" light to execute, each **Stage** should satisfy the necessary **Skills** expected by the **Process**. This is done after all infrastructural and operational **Resources** are provided by the Facility, and the **Stage** can execute its final setup. Then, the **Cyclo** is ready to start processing the **WiP**.
 
-## State
+Each **Stage** can be in one of the following states:
 
-- **FREE**: Stage that requires Skills is created at Facility and available.
+- **FREE**: Stage that requires Skills is initialized at Facility.
 - **ALLOC**: Stage is allocating Resources from Facility Infrastructure & Operation.
-- **SETUP**: Stage with Skills satisfied, preparing to initiate Production.
-- **READY**: Stage is ready for Production, getting the WiP.
+- **SETUP**: Stage with all Skills satisfied, executing final setup for production.
+- **READY**: Stage is ready for Production, waiting for the next WiP.
 - **EXEC**: Stage is effectively transforming the WiP.
-- **WIP**: Stage is putting the WiP.
+- **WIP**: Stage is putting the WiP towards the next Stage.
 - **RELEASE**: Stage is releasing Resources from Facility Infrastructure & Operation.
 
 Some optimization may prevent unnecessary release/reallocation delays, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.
