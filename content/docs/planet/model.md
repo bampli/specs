@@ -10,16 +10,15 @@ The **Planet** shown below is populated by at least one **Product** made by its 
 {{< mermaid >}}
 classDiagram
     Planet --> "1..n" Product : populated_by
-    Planet --> "1..n" RM : provides
     Product --> "1..n" Process : made_by
+    Stage --> "1..n" Skill : require
+    Stage --> "1..n" Facility : alloc
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
-    Stage --> Stage : previous_next
-    WiP --> RM : buys
-    Stage --> WiP : transforms
-    Product --> WiP : sells
-    Stage --> "1..n" Skill : requires
-    Stage --> "1..n" Facility : allocates
+    Stage --> Stage : next
+    WiP --> Product : buy
+    Stage --> WiP : transform
+    Product --> WiP : sell
 {{< /mermaid >}}
 
 {{< hint info >}}

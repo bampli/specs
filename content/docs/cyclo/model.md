@@ -27,28 +27,27 @@ The **Stage**, detailed below, allocates **Facility** resources divided into two
 {{< mermaid >}}
 classDiagram
     Planet --> "1..n" Product : populated_by
-    Planet --> "1..n" RM : provides
     Product --> "1..n" Process : made_by
-    Product --> WiP : sells
+    Stage --> "1..n" Skill : require
+    Product --> WiP : sell
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
-    Stage --> "1..n" WiP : 3.transforms
-    Stage --> "1..n" Facility : 2.allocates
-    Stage --> Stage : previous_next
-    WiP --> RM : buys
+    Stage --> "1..n" Facility : alloc
+    Stage --> Stage : next
+    Stage --> "1..n" WiP : transform
+    WiP --> Product : buy
     Infrastructure <|-- Energy
     Infrastructure <|-- Area
     Infrastructure <|-- Other
-    Worker --> "1..n" Skill : has_skill
-    Worker --> "0..n" Worker : commands
-    Worker --> "0..n" Tool : commands
-    Tool --> "0..n" Tool : commands
+    People --> "1..n" Skill : has_skill
+    People --> "0..n" People : command
+    People --> "0..n" Tool : command
+    Tool --> "0..n" Tool : command
     Tool --> "1..n" Skill : has_skill
     Facility <|-- Infrastructure
-    Operation <|-- Worker
+    Operation <|-- People
     Operation <|-- Tool
     Facility <|-- Operation
-    Stage --> "1..n" Skill : 1.requires
 {{< /mermaid >}}
 
 
