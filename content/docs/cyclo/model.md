@@ -9,20 +9,19 @@ The following rules apply to a **Planet** populated by **Products**, made by a *
 
 - The **Process** is specified by **Cyclos**, grouped in **Stages**.
 - The **Facility** provides infrastructural & operational **Resources**. 
-- **Stage** and **WiP** are first class citizens of **Cyclo** operation.
+- **Stage** and **WiP** (Work In Process) are first class citizens of **Cyclo**.
 - The **Stage** allocates **Resources** to accomplish its task.
 - Every **Stage** requires **Skills** to accomplish its task.
-- The **Skill** is provided by a combination of **Workers** and/or **Tools**.
-- The **Stage** buys **RM** from **Planet** as Work In Process **WiP**.
+- The **Skill** is provided by a combination of **People** and/or **Tools**.
+- The **Stage** buys **Product** from **Planet** as **WiP**.
 - The **Stage** transforms **WiP** through the **Cyclo**.
-- The **Stage** sells **Product** to **Planet** as Work In Process **WiP**.
-- **Product** and **RM** are extensions of **WiP**, with some logistic between them.
-- **WiP** becomes **Product** that becomes **RM** that becomes **WiP** at another **Cyclo**.
+- The **Stage** sells **Product** to **Planet** as **WiP**.
+- **WiP** becomes **Product** that becomes **WiP** at another **Cyclo**.
 
 The **Stage**, detailed below, allocates **Facility** resources divided into two categories:
 
 - **Facility Infrastructure**: includes items like Shop Floor Area, Energy, Equipment, etc.
-- **Facility Operation**: includes operational items with **Skills**, like **Worker** and **Tool**.
+- **Facility Operation**: includes operational items with **Skills**, like **People** and **Tool**.
 
 {{< mermaid >}}
 classDiagram
