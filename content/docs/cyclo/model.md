@@ -44,10 +44,10 @@ classDiagram
     People --> "0..n" Tool : command
     Tool --> "0..n" Tool : command
     Tool --> "1..n" Skill : has_skill
+    Facility <|-- Operation
     Facility <|-- Infrastructure
     Operation <|-- People
     Operation <|-- Tool
-    Facility <|-- Operation
 {{< /mermaid >}}
 
 
