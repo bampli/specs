@@ -39,13 +39,13 @@ classDiagram
     Infrastructure <|-- Energy
     Infrastructure <|-- Area
     Infrastructure <|-- Other
-    Worker --> "1..n" Skill : has_skill
-    Worker --> "0..n" Worker : command
-    Worker --> "0..n" Tool : command
+    People --> "1..n" Skill : has_skill
+    People --> "0..n" People : command
+    People --> "0..n" Tool : command
     Tool --> "0..n" Tool : command
     Tool --> "1..n" Skill : has_skill
     Facility <|-- Infrastructure
-    Operation <|-- Worker
+    Operation <|-- People
     Operation <|-- Tool
     Facility <|-- Operation
 {{< /mermaid >}}
