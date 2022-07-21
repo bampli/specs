@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Model
 
-The following rules apply to a **Planet** populated by **Products**, made by a **Process** that may extract Raw Material **RM** from the **Planet**.
+The following rules apply to a **Planet** populated by **Products**, made by a **Process** inside a **Facility**.
 
 - The **Process** is specified by **Cyclos**, grouped in **Stages**.
 - The **Facility** provides infrastructural & operational **Resources**. 
