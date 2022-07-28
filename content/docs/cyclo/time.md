@@ -38,9 +38,8 @@ sequenceDiagram
 
 ### Resource Allocation
 
-- From the **Cyclo** may eventually come and go assets like **WiP**.
 - **Infrastructure** are **Resources** supported by the **Facility**, like Energy and Shop Floor Area.
-- The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and Workers.
+- The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and People.
 - For each required **Resource**, check its availability. If it's not available, the **Stage** awaits.
 - At **Resource** allocation phase, there may be a delay due to the **Resource Allocation Time**.
 
@@ -50,6 +49,7 @@ sequenceDiagram
 
 ### Stage Execution
 
+- From the **Cyclo** may eventually come and go assets like **WiP**.
 - **Stages** execute transformations according to Deming's **Process** specification: *At each **Stage** there is production, that is, something happens in the set of assets that enter a **Stage**, causing their exit in a different state*.
 - The Stage execution expects to introduce a delay known as the **Stage Execution Time**.
 

@@ -35,7 +35,7 @@ has potential to buy up to 100 pieces of P and 50 pieces of Q per week.
 - **Prices**: The unit prices are preset at $90 for P and $100 for Q. If production exceeds market volume limits, the products become stranded.
 - **Operating Expenses**: There are no surprises for fixed costs, since Operating Expenses are immutable $6,000 per week, including Workforce and Overhead.
 - **Raw Materials**: The raw materials used in the process are P-Part, RM1, RM2, and RM3, at costs respectively of $5, $20, $20 and $20, with no surprises.
-- **Workforce**: The P&Q Factory has four workers with different **skills**: A, B, C, and D. They are absolutely perfect workers during all the working time. No delays, no errors.
+- **Workforce**: The P&Q Factory has four people with different **skills**: A, B, C, and D. They are absolutely perfect during all the working time. No delays, no errors.
 
 ## P&Q Process
 
