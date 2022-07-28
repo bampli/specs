@@ -6,7 +6,12 @@ weight: 45
 
 # Planet & Company
 
+A **Planet** transform **Products** using a **Process** powered by **Cyclos**. They are  organized in a **Stage** network that requires **Skills** to be deployed across a **Facility** that is owned by a **Company**.
+
+Each **Product** contributes to **Company** with its **Gain**. A **bAmpli** receive the **Gain** from the **Cyclo** and take wise decisions to keep the **Process** running smoothly. A **Company** invest on a **bAmpli Circuit** composed of combined **Cyclos/bAmpli** deployed across a **Facility** aiming return on investment.
+
 The following relationships rule the interaction between the Planet and the Company.
+
 {{< columns >}}
 
 ## PLANET
@@ -26,7 +31,7 @@ The following relationships rule the interaction between the Planet and the Comp
 - The **Company** has **Investors**
 - that own **Shares**
 - that decide how to manage a **Facility**
-- that implements a **bAmpli Circuit**
+- that deploys a **bAmpli Circuit**
 - with at least one **bAmpli**
 - that handles at least one **Cyclo**
 - composed by one **Stage** or more.
