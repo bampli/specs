@@ -10,7 +10,7 @@ A **Planet** transform **Products** using a **Process** powered by **Cyclos**. T
 
 Each **Product** contributes to **Company** with its **Gain**. A **bAmpli** receive the **Gain** from the **Cyclo** and take wise decisions to keep the **Process** running smoothly. A **Company** invest on a **bAmpli Circuit** composed of combined **Cyclos/bAmpli** deployed across a **Facility** aiming return on investment.
 
-The following relationships rule the interaction between the Planet and the Company.
+The following relationships rule the interaction between the **Planet** and the **Company**.
 
 {{< columns >}}
 
@@ -38,7 +38,7 @@ The following relationships rule the interaction between the Planet and the Comp
 
 {{< /columns >}}
 
-The following diagram clarifies the Planet & Company containerships.
+The following diagram clarifies the **Planet** & **Company** containerships.
 
 ![Z1 1 company-planet-2](https://user-images.githubusercontent.com/86032/81451969-0bd8d580-915c-11ea-807f-3185ef213fed.png)
 
