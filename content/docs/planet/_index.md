@@ -10,7 +10,7 @@ A **Planet** transform **Products** using a **Process** powered by **Cyclos**. T
 
 Each **Product** contributes to **Company** with its **Gain**. A **bAmpli** receive the **Gain** from the **Cyclo** and take wise decisions to keep the **Process** running smoothly. A **Company** invest on a **bAmpli Circuit** composed of combined **Cyclos/bAmpli** deployed across a **Facility** aiming return on investment.
 
-The following relationships rule the interaction between the Planet and the Company.
+The following relationships rule the interaction between the **Planet** and the **Company**.
 
 {{< columns >}}
 
