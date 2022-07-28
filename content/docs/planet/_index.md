@@ -38,7 +38,7 @@ The following relationships rule the interaction between the **Planet** and the 
 
 {{< /columns >}}
 
-The following diagram clarifies the Planet & Company containerships.
+The following diagram clarifies the **Planet** & **Company** containerships.
 
 ![Z1 1 company-planet-2](https://user-images.githubusercontent.com/86032/81451969-0bd8d580-915c-11ea-807f-3185ef213fed.png)
 
