@@ -18,7 +18,7 @@ tags: [
 The **Stage** revised model shows below the **Facility** resources divided into two categories:
 
 - **FacilityInfra**: includes infrastructure items, like Shop Floor Area, Energy, etc.
-- **FacilityOp**: includes operational items with **Skills**, like Tools and Workers.
+- **FacilityOp**: includes operational items with **Skills**, like Tools and People.
 
 {{< mermaid >}}
 classDiagram
@@ -94,7 +94,7 @@ stateDiagram
 
 - From the **Cyclo** may eventually come **RM**, and **WiP** generated at previous **Stage**.
 - **Infrastructure Resources** are obtained from the **Facility**, like Energy and Shop Floor Area.
-- The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and Workers.
+- The **Skills** indicate **Operational Resources** to be sought in the **Facility**, like Tools and People.
 - For each required **Resource**, check its availability. If not available, the **Stage** must wait.
 - At Resource allocation, there may be a delay due to the **Resource Allocation Time**.
 - Before each Stage execution, there may be a delay due to the **Resource Setup Time**.

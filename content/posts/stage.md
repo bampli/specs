@@ -38,24 +38,24 @@ graph LR
     RM1[RM1 $20/u]-- raw material --> A1[A 15min/u]-- work-in-process --> C1[C 10min/u]
 {{< /mermaid >}}
 
-Then, **C processes the WiP** for 10 minutes. Please note that the C input is not RM1 anymore, since it was already transformed by A. It is also implied in the production flow diagram that:
+Then, C processes the **WiP** for 10 minutes. Please note that the C input is not RM1 anymore, since it was already transformed by A. It is also implied in the production flow diagram that:
 
 - RM1 is a **resource** to A, and WiP is a **resource** to C as well.
 - RM1 is an **external** asset, since it comes from outside the process.
 - WiP is an **internal** asset, i.e. an intermediary result inside the process.
 - The transformation in RM1 is a **task** that requires 15 minutes of A's work.
 - Similarly, the WiP is processed by a **task** that requires 10 minutes from C.
-- A and C are workers with specific **skills**, also named "A" and "C" here.
-- It is convenient to separate the **worker** from its **skill**.
+- A and C are combination of people/tools with specific **skills**.
+- It is convenient to organize people/tools based on its **skills**.
 - Actually the **task** is a **Stage** that requires a **skill**.
-- The **worker** is a **resource** with the necessary **skill** to accomplish the job.
-- A **tool** with a skill is another **resource** that can also be used.
-- The skills may be combined, for example, a worker **commands** a robot.
+- A **person** may be a **resource** with a **skill** to accomplish the job.
+- A **tool** with a **skill** is another **resource** that can also be used.
+- The **skills** may be combined, for example, a person commands a group of robots.
 
 We can also assure that the **resources** come from different sources:
 
 - RM and WiP are resources related to the **Cyclo**.
-- Workers, tools, energy, shop floor area, etc. are implemented by the **Facility**.
+- People, tools, energy, shop floor area, etc. are resources deployed across a **Facility**.
 
 ## The Stage Model
 
