@@ -53,7 +53,7 @@ More details are shown at the links below:
 
 ## P&Q Factory
 
-The [**P&Q Factory**](/posts/pq-factory/) manufactures P & Q in a production flow that requires **Skills** A, B, C, and D:
+The [**P&Q Factory**](/posts/pq-factory/) deploys a  **Process** across its **Facility** to transform raw materials (RM1-3 & P-Part) into products P & Q. The **Stages** are organized in a network that requires **Skills** A, B, C, and D:
 
 {{< mermaid >}}
 graph LR
