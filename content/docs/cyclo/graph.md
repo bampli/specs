@@ -53,7 +53,7 @@ More details are shown at the links below:
 
 ## P&Q Factory
 
-The [**P&Q Factory**](/posts/pq-factory/) deploys a  **Process** across its **Facility** to transform raw materials (RM1-3 & P-Part) into products P & Q. The **Stages** are organized in a network that requires **Skills** A, B, C, and D:
+The [**P&Q Factory**](/posts/pq-factory/) deploys a  **Process** across its **Facility** to transform *products* [RM-1, RM-2, RM-3 & P-Part] into *products* [P & Q]. The **Stages** with **Skills** A, B, C, and D are organized in a network: 
 
 {{< mermaid >}}
 graph LR
@@ -64,19 +64,10 @@ graph LR
     RM3[RM3 $20/u] --> A3[A 10min/u] --> B3[B 15min/u] --> D2[D 5min/u] --> Q[Q $100/U 50u/wk]
 {{< /mermaid >}}
 
-It is also represented by a graph with the respective product and stage vertices, as shown below:
+The **Process** contains a coupĺe **Cyclos** for P & Q respectively. The flow in the network start from *raw materials* side of the **Cyclo** with transformations that generate intermediary assets, or *work-in-process*. The **WiPs** become *final products* at the other end of the **Cyclo**. The **Process** may be represented by a graph with the respective product and stage vertices, as shown below:
 
 ![p q-graph](https://user-images.githubusercontent.com/86032/86799006-d2332680-c047-11ea-8d02-9da1042c1e51.png)
 
-## Cyclo API
-
-The [Cyclo API](https://app.swaggerhub.com/apis/motta/bampli) is located at the Business Amplifier project.
-
-## Cyclo server
-
-**bAmpli Cyclo Control**: Given a Cyclo, start it.
-
-Product (Raw Material) --> Stage --> Stage --> Product (for Sale)
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
