@@ -21,7 +21,7 @@ The following rules apply to a **Planet** populated by **Products**, made by a *
 The **Stage**, detailed below, allocates **Facility** resources divided into two categories:
 
 - **Facility Infrastructure**: includes items like Shop Floor Area, Energy, Equipment, etc.
-- **Facility Operation**: includes operational items with **Skills**, like **People** and **Tool**.
+- **Facility Operation**: includes operational items with **Skills**, like **People** and **Tools**.
 
 {{< mermaid >}}
 classDiagram
