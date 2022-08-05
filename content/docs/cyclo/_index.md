@@ -10,7 +10,7 @@ To assist investors and managers in decision-making toward the global optimum, r
 
 - **This is what I can do for you; here's what you can do for me.**
 
-Also considering that the process stages do not have a one-time-and-done behavior, but a endlessly sequence, repeated for each new product during the working time. An asset always enters in a stage, is processed for some time and goes to the next stage. The process acts as n-stroke engine or n-pole generator, where "n" is the number of process stages.
+Also consider that the stages do not have a one-time-and-done behavior, but an endless sequence, repeated for each new product, during the working time. An asset always enters in a stage, then is processed for some time and moves to the next stage. The whole process acts as n-stroke engine or n-pole generator, where "n" is the number of process stages.
 
 The **Process** definition also emphasizes sustainability, as follows:
 
