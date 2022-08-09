@@ -40,11 +40,11 @@ classDiagram
     Infrastructure <|-- Energy
     Infrastructure <|-- Area
     Infrastructure <|-- Other
-    People --> "1..n" Skill : has_skill
+    People --> "1..n" Skill : provide
     People --> "0..n" People : command
     People --> "0..n" Tools : command
     Tools --> "0..n" Tools : command
-    Tools --> "1..n" Skill : has_skill
+    Tools --> "1..n" Skill : provide
     Facility <|-- Operation
     Facility <|-- Infrastructure
     Operation <|-- People
