@@ -3,18 +3,17 @@ title: Times of Gain
 weight: 8
 bookToc: false
 ---
-# Times of Gain
+# Times of Gain (ToG)
 
-The actual amount of time each **Stage** will require at run time is defined by the **Process**, responsible for the **Cyclo** design, and counting on with support provided by the **Facility**. All timing should be analyzed as [**statistical distributions**](/posts/stats), subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [**TPM**](/posts/tpm/) (Total Productive Maintenance) directives.
+Actually, the **Stage** is a state machine that changes in a timeline, according to the phases listed below:
 
-The **Stage** timing includes the four phases listed below:
-
-- resources allocation
+- resource allocation
 - setup
 - execution
-- resources release
+- resource release
+- free
 
-The following diagram represents the timeline including all phases:
+The following diagram show the Times of Gain (**ToG**) timeline:
 
 {{< mermaid >}}
 sequenceDiagram
