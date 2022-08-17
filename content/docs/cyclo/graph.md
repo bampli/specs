@@ -1,6 +1,6 @@
 ---
 title: Cyclo graph
-weight: 10
+weight: 12
 ---
 # Cyclo graph
 

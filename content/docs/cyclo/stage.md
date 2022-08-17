@@ -5,6 +5,8 @@ bookToc: false
 ---
 # Stage
 
+The actual amount of time each **Stage** will require at run time is defined by the **Process**, responsible for the **Cyclo** design, and counting on with support provided by the **Facility**. All timing should be analyzed as [**statistical distributions**](/posts/stats), subject to variations due to existing **common** and **special causes** in the **Process**, according to **SPC** (Statistical Process Control) and [**TPM**](/posts/tpm/) (Total Productive Maintenance) directives.
+
 Before the **Cyclo** can receive the "green" light to execute, each **Stage** should satisfy the necessary **Skills** expected by the **Process**. This is done after all infrastructural and operational **Resources** are provided by the Facility, and the **Stage** can execute its final setup. Then, the **Cyclo** is ready to start processing the **WiP**.
 
 Each **Stage** can be in one of the following states:
@@ -39,9 +41,9 @@ The **ReadyTime**, when the **Stage** is ready for Production, can be split even
 
 *ReadyTime = GetWipTime + ExecTime + PutWipTime*  
 
-## Timing
+## Times of Gain (ToG)
 
-The following diagram represents the timeline including all states:
+The following diagram represents the ToG timeline, including all states:
 
 {{< mermaid >}}
 sequenceDiagram
@@ -70,50 +72,6 @@ sequenceDiagram
     rect rgb(0, 0, 255, .3)
         ALLOC->>FREE: TotalTime
     end
-{{< /mermaid >}}
-
-## Workflow
-
-The diagram below shows the allocation, setup, execution and release phases available for each **Stage**.
-
-{{< mermaid >}}
-stateDiagram
-    [*] --> ALLOC : Cyclo is running
-    ALLOC --> SETUP
-    SETUP --> READY
-    READY --> RELEASE
-    RELEASE --> [*]
-    state ALLOC {
-        [*] --> FacilityInfra
-        [*] --> Skill
-        FacilityInfra --> Energy
-        FacilityInfra --> Area
-        Energy --> [*] : energy_ok
-        Area --> [*] : area_ok
-        Skill --> FacilityOp
-        FacilityOp --> Tool
-        Tool --> [*] : tool_skill_ok
-        FacilityOp --> Worker
-        Worker --> [*] : worker_skill_ok
-    }
-    state SETUP {
-        setup
-    }
-    state READY {
-        getWiP --> EXEC
-        EXEC --> putWiP
-        putWiP
-    }
-    state RELEASE {
-        [*] --> Area
-        Area --> FacilityInfra : area_free
-        [*] --> Energy
-        Energy --> FacilityInfra : energy_free
-        [*] --> Tool
-        Tool --> FacilityOp : tool_skill_free
-        [*] --> Worker
-        Worker --> FacilityOp : worker_skill_free
-    }
 {{< /mermaid >}}
 
 {{< hint info >}}
