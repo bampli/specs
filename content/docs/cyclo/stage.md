@@ -19,28 +19,6 @@ Each **Stage** can be in one of the following states:
 - **WIP**: Stage is putting the WiP towards the next Stage.
 - **RELEASE**: Stage is releasing Resources from Facility Infrastructure & Operation.
 
-Some optimization may prevent unnecessary release/reallocation delays, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.
-
-## Time Distributions
-
-During its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should evaluate the following *elapsed time* [frequency distributions](/posts/stats):
-
-- **FreeTime**: Time the Stage is freely available at Facility.
-- **AllocationTime**: Time spent allocating Resources from Facility.
-- **SetupTime**: Time spent with Stage setup.
-- **ReadyTime**: Time the Stage is ready for Production.
-- **ReleaseTime**: Time spent decomissioning the Stage.
-
-*WorkingTime = FreeTime + AllocationTime + SetupTime + ReadyTime + ReleaseTime* 
-
-The **ReadyTime**, when the **Stage** is ready for Production, can be split even more:
-
-- **GetWipTime**: Time to gather the necessary **WiP**.
-- **ExecTime**: Time the Stage takes to effectively transform the **WiP**.
-- **PutWipTime**: Time the Stage takes to put properly the **WiP**.
-
-*ReadyTime = GetWipTime + ExecTime + PutWipTime*  
-
 ## Times of Gain (ToG)
 
 The following diagram represents the ToG timeline, including all states:
@@ -73,6 +51,27 @@ sequenceDiagram
         ALLOC->>FREE: TotalTime
     end
 {{< /mermaid >}}
+
+
+In its lifespan within the [**Working Time**](/posts/tpm), the **Stage** should elaborate the following *elapsed time* [statistical distributions](/posts/stats):
+
+- **FreeTime**: Time the Stage is freely available at Facility.
+- **AllocationTime**: Time spent allocating Resources from Facility.
+- **SetupTime**: Time spent with Stage setup.
+- **ReadyTime**: Time the Stage is ready for Production.
+- **ReleaseTime**: Time spent decomissioning the Stage.
+
+**WorkingTime = FreeTime + AllocationTime + SetupTime + ReadyTime + ReleaseTime**
+
+The **ReadyTime**, when the **Stage** is ready for Production, can be split even more:
+
+- **GetWipTime**: Time to gather the necessary **WiP**.
+- **ExecTime**: Time the Stage takes to effectively transform the **WiP**.
+- **PutWipTime**: Time the Stage takes to put properly the **WiP**.
+
+**ReadyTime = GetWipTime + ExecTime + PutWipTime**  
+
+Some optimization may prevent unnecessary release/reallocation delays, according to rule five of Deming's **Process** specification: *Each Stage cooperates with the next and the previous, seeking optimization*.
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**

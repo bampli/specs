@@ -54,7 +54,6 @@ sequenceDiagram
 
 ### Resource Release
 
-- After execution, allocated **Resources** should be available to another **Stage**.
 - Any resulting **WiP** must be released to the next **Stage** in the **Cyclo**.
 - **Resources** allocated from the Facility are eventually released to **FacilityInfra** & **FacilityOp**.
 - At **Resource** release phase, there may be a delay due to the **Resource Release Time**.
