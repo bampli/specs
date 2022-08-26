@@ -11,8 +11,8 @@ The **Planet** shown below is populated by at least one **Product** made by at l
 classDiagram
     Planet --> "1..n" Product : populated_by
     Product --> "1..n" Process : made_by
+    Facility --> "1..n" Process : deploy
     Stage --> "1..n" Skill : require
-    Stage --> "1..n" Facility : alloc
     Process --> "1..n" Cyclo : composed_of
     Cyclo --> "1..n" Stage : composed_of
     Stage --> Stage : next
