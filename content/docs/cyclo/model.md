@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Model
 
-The following rules apply to a **Planet** populated by **Products**, made by a **Process** inside a **Facility**.
+These rules apply to a **Planet** populated by **Products**, made by a **Process** in a **Facility** managed by a **Company**.
 
 - The **Process** is specified by **Cyclos**, grouped in **Stages**.
 - The **Facility** provides infrastructural & operational **Resources**. 
