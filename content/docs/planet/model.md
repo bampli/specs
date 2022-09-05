@@ -5,17 +5,17 @@ bookToc: false
 ---
 # Model
 
-The **Planet** shown below is populated by at least one **Product** made by at least one **Process**.
+The **Planet** shown below is populated by at least one **Product** made by at least one **Cyclo**.
 
 {{< mermaid >}}
 classDiagram
     Planet --> "1..n" Product : populated_by
     Company --> Facility : manage
-    Product --> "1..n" Process : made_by
+    Product --> "1..n" Cyclo : made_of
     Facility --> "1..n" Process : deploy
     Stage --> "1..n" Skill : require
-    Process --> "1..n" Cyclo : composed_of
-    Cyclo --> "1..n" Stage : composed_of
+    Process --> "1..n" Cyclo : contain
+    Cyclo --> "1..n" Stage : contain
     Stage --> Stage : next
     WiP --> Product : buy
     Stage --> WiP : transform

@@ -5,7 +5,7 @@ bookToc: false
 ---
 # Model
 
-These rules apply to a **Planet** populated by **Products**, made by a **Process** in a **Facility** managed by a **Company**.
+These rules apply to a **Planet** populated by **Products**, made by a **Cyclo** in a **Process** deployed across a **Facility** managed by a **Company**.
 
 - The **Process** is specified by **Cyclos**, grouped in **Stages**.
 - The **Facility** provides infrastructural & operational **Resources**. 
@@ -29,10 +29,10 @@ classDiagram
     Company --> Facility : manage
     Product --> WiP : sell
     WiP --> Product : buy
-    Process --> "1..n" Cyclo : composed_of
-    Product --> "1..n" Process : made_by
+    Process --> "1..n" Cyclo : contain
+    Product --> "1..n" Cyclo : made_of
     Facility --> "1..n" Process : deploy
-    Cyclo --> "1..n" Stage : composed_of
+    Cyclo --> "1..n" Stage : contain
     Stage --> Stage : next
     Stage --> "1..n" WiP : transform
     Stage --> "1..n" Skill : require
