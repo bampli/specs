@@ -48,7 +48,7 @@ sequenceDiagram
         RELEASE-->>FREE: ReleaseTime
     end
     rect rgb(0, 0, 255, .3)
-        ALLOC->>FREE: TotalTime
+        ALLOC->>FREE: WorkingTime
     end
 {{< /mermaid >}}
 
