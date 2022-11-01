@@ -16,7 +16,7 @@ tags: [
 
 This is the **Process** used as a sample when a process is needed in this project.
 
-The P&Q Factory gives no room for apology and demonstrates how the "Theory of Constraints" can help managers with their decision-making logic. The fictional factory portfolio has products P & Q.
+The P&Q Factory gives no room for apology and demonstrates how the "Theory of Constraints" (ToC) can help managers with their decision-making logic. The fictional factory portfolio has products P & Q.
 
 ## P&Q Factory
 
@@ -63,9 +63,19 @@ The middle flow starts with RM2 being processed by B for 15 minutes, continue to
 
 Lastly, RM3 spends 10 minutes being processed by A, then is processed for 15 minutes by B and goes to Q assembly workstation. D assembles P and Q in respectively 15 and 5 minutes.
 
-## How much profits the P&Q Factory?
+## How much does the P&Q Factory make?
 
-What is the maximum net profit that P&Q Factory can earn per week? Think about the time each stage has for producing P&Q. This exercise is solved in the books "The Haystack Syndrome" and [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q).
+What is the maximum net profit that P&Q Factory can make per week? Think about the time each stage has for producing P&Q and apply the ToC decision process.
+
+**TOC DECISION PROCESS**
+1. Identify the system constraint(s);
+2. Decide how to exploit system constraint(s);
+3. Bribe everything else to the previous decision;
+4. Evolve the system constraint(s);
+5. If, in the previous steps, a constraint has been broken, return to step 1,
+without letting inertia cause a system constraint.
+
+Check the detailed solution in the books "The Haystack Syndrome" by Eliyahu M. Goldratt and [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q) by José Motta.
 
 {{< hint info >}}
 **Published in [Business Amplifier](https://www.amazon.com/Business-Amplifier-M-Sc-Motta-Lopes/dp/B083XGK14Q), also [e-book](https://www.amazon.com/Business-Amplifier-Jose-Motta-Lopes-ebook-dp-B086L6V6QY/dp/B086L6V6QY/) and [Amplificador de Negócios](https://www.amazon.com/M-Sc-Jose-Motta-Lopes/dp/8592301009).**
